@@ -48,20 +48,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const roleImagePath = `./img/${player.role}.png`;
 
       const cardHTML = `
-        <div class="player-card ${roleClass}">
-            <p class="player-name">${player.name}</p>
+  <div class="player-card ${roleClass}">
+      <p class="player-name">${player.name}</p>
 
-            <div class="role-info">
-                <img src="${roleImagePath}" alt="${player.role}" class="role-image" />
-                <span class="role-name" style="color: ${roleColor};">${player.role}</span> 
-            </div>
+      <div class="card-bottom">
+          <div class="role-container">
+              <img src="${roleImagePath}" alt="${player.role}" class="role-image" />
+              <span class="role-name" style="color: ${roleColor};">${player.role}</span> 
+          </div>
 
-            <div class="hero-info">
-                <img src="${heroImagePath}" alt="${player.hero}" class="hero-image" />
-                <p class="hero-name">${player.hero}</p>
-            </div>
-        </div>
-      `;
+          <div class="hero-container">
+              <img src="${heroImagePath}" alt="${player.hero}" class="hero-image" />
+              <p class="hero-name">${player.hero}</p>
+          </div>
+      </div>
+  </div>
+`;
 
       playerListDiv.insertAdjacentHTML("beforeend", cardHTML);
     });
