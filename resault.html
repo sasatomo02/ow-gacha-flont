@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OW 編成結果</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .result-container {
+        width: 95%;
+        max-width: 1800px;
+        padding: 30px;
+      }
+
+      .player-list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        min-height: 350px;
+      }
+
+      .player-card {
+        background-color: #2a2f3a;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
+        border: 1px solid #00c8ff;
+        width: 240px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .player-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 200, 255, 0.6);
+      }
+
+      .player-name {
+        color: #ff9900;
+        font-size: 1.8em;
+        margin: 15px 0;
+        font-weight: bold;
+        border-bottom: 3px solid #ff9900;
+        padding-bottom: 8px;
+      }
+
+      .role-info {
+        margin: 25px 0;
+      }
+
+      .role-name {
+        font-size: 1.6em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 8px;
+      }
+
+      .hero-info {
+        margin-top: 30px;
+        padding-top: 25px;
+        border-top: 2px dashed #5a6e8c;
+      }
+
+      .hero-name {
+        font-size: 1.9em;
+        color: #00c8ff;
+        font-weight: bold;
+        text-shadow: 0 0 8px rgba(0, 200, 255, 0.7);
+      }
+
+      .role-image,
+      .hero-image {
+        width: 90px;
+        height: 90px;
+        background-color: #4a4f5c;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        border: 4px solid;
+        display: block;
+      }
+
+      .role-tank .role-image {
+        border-color: #f7931e;
+      }
+      .role-damage .role-image {
+        border-color: #ee4a4a;
+      }
+      .role-support .role-image {
+        border-color: #4ac9ff;
+      }
+      .hero-image {
+        border-radius: 6px;
+        border-color: #00c8ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container result-container">
+      <div class="player-list">
+        <p style="text-align: center; color: #b0c4de">データを読み込み中...</p>
+      </div>
+
+      <p style="text-align: center; margin-top: 40px">
+        <a
+          href="main.html"
+          style="
+            color: #ff9900;
+            text-decoration: none;
+            border: 1px solid #ff9900;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+          "
+        >
+          < 戻る
+        </a>
+      </p>
+    </div>
+
+    <script src="result.js"></script>
+  </body>
+</html>

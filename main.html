@@ -1,0 +1,61 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OW 編成ガチャ</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<script src="main.js"></script>
+<body>
+    <div class="container">
+        <h2>
+            <span style="font-size: 0.8em;">チーム</span> メンバー 登録
+        </h2>
+
+        <form id="playerForm">
+            <div class="input-group">
+                <label for="player1">プレイヤー 1</label>
+                <input type="text" id="player1" name="player1" required>
+            </div>
+            <div class="input-group">
+                <label for="player2">プレイヤー 2</label>
+                <input type="text" id="player2" name="player2">
+            </div>
+            <div class="input-group">
+                <label for="player3">プレイヤー 3</label>
+                <input type="text" id="player3" name="player3">
+            </div>
+            <div class="input-group">
+                <label for="player4">プレイヤー 4</label>
+                <input type="text" id="player4" name="player4">
+            </div>
+            <div class="input-group">
+                <label for="player5">プレイヤー 5</label>
+                <input type="text" id="player5" name="player5">
+            </div>
+            
+            <button type="submit">メンバー確定</button>
+        </form>
+
+        <div id="result" style="margin-top: 40px;">
+            <h3 style="color: #00c8ff; border-bottom: 1px solid #00c8ff; padding-bottom: 5px; margin-bottom: 15px; text-align: center; display: none;" id="resultTitle">
+
+            </h3>
+            
+            <table id="teamTable" style="width: 100%; border-collapse: collapse; display: none;">
+                <thead>
+                    <tr style="background-color: #3a414e;">
+                        <th style="padding: 10px; border: 1px solid #5a6e8c; color: #ff9900;">ロール</th>
+                        <th style="padding: 10px; border: 1px solid #5a6e8c; color: #ff9900;">プレイヤー名</th>
+                        <th style="padding: 10px; border: 1px solid #5a6e8c; color: #ff9900;">割り当てキャラ</th>
+                    </tr>
+                </thead>
+                <tbody id="teamBody">
+                    </tbody>
+            </table>
+        </div>
+        </div>
+
+    </body>
+</html>
